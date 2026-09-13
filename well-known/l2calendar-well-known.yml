@@ -1,0 +1,36 @@
+generated: '2026-09-13'
+method: probed
+source: >-
+  Anonymous GET probes of the standard /.well-known/ discovery paths on the
+  l2calendar.com host. Every path returned 404; no discovery document is
+  served, so no WellKnown/SecurityTxt pointer is emitted.
+hosts:
+  - host: l2calendar.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+      - path: /.well-known/mcp.json
+        status: 404
+        file: null

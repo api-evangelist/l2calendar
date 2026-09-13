@@ -4,10 +4,11 @@ description: >-
   chronicle, with filters by chronicle, rates, labels, and opening date. Server owners publish announcements with
   optional VIP placement.
 url: >-
-  https://raw.githubusercontent.com/api-evangelist/l2calendar-lineage-2-private-servers-amp-opening-dates/refs/heads/main/apis.yml
+  https://raw.githubusercontent.com/api-evangelist/l2calendar/refs/heads/main/apis.yml
 created: '2026-09-12'
-modified: '2026-09-12'
+modified: '2026-09-13'
 specificationVersion: '0.21'
+image: https://l2calendar.com/images/logo.png
 tags:
   - lineage2
   - mmorpg
@@ -23,6 +24,7 @@ apis:
       and crawlers to help players find Lineage 2 servers.
     humanURL: https://l2calendar.com
     baseURL: https://l2calendar.com
+    image: https://l2calendar.com/images/logo.png
     tags:
       - lineage2
       - mmorpg
@@ -39,8 +41,46 @@ apis:
 maintainers:
   - FN: L2Calendar
     url: https://l2calendar.com
-generated:
+x-generated:
   by: apis.io/add
   model: claude-opus-4-8
   confidence: 90
   at: '2026-09-12T11:28:44.508Z'
+common:
+- type: Website
+  url: https://l2calendar.com
+- type: DomainSecurity
+  url: security/l2calendar-domain-security.yml
+- type: Plans
+  url: plans/l2calendar-plans-pricing.yml
+- type: Pricing
+  url: https://l2calendar.com/addnews_vip
+- type: Blog
+  url: https://l2calendar.com/blog
+- type: SignUp
+  url: https://l2calendar.com/addnews
+
+x-enrichment:
+  date: '2026-09-13'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    L2Calendar is a Next.js content platform that publishes llms.txt and
+    llms-full.txt for agents but exposes no public API; every OpenAPI/GraphQL/MCP
+    and /.well-known probe 404s and the only /api/ path is an internal Next.js
+    route that 301-redirects and is Disallowed in robots.txt.
+  evidence:
+    - url: https://l2calendar.com/openapi.json
+      status: 404
+    - url: https://l2calendar.com/graphql
+      status: 404
+    - url: https://l2calendar.com/api/
+      status: 301
+    - url: https://l2calendar.com/llms.txt
+      status: 200
+  checked: '2026-09-13'

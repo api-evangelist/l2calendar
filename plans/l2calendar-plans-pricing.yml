@@ -1,0 +1,47 @@
+generated: '2026-09-13'
+method: searched
+source: https://l2calendar.com/addnews_vip
+note: >-
+  L2Calendar monetizes server listings, not an API. Server administrators post
+  a free listing (/addnews, reviewed within 24h) or buy VIP placement
+  (/addnews_vip) in one of four named tiers that publish immediately and rank
+  above free listings. The tier NAMES are published on the Buy VIP page, but the
+  actual prices and durations load inside a JavaScript form ("Loading form...")
+  and are not present in the static HTML, so per-tier amounts could not be read.
+  There is no API pricing (no public API is offered).
+plan_count: 5
+currency: unknown
+plans:
+  - name: Free listing
+    price: 0
+    billing_period: one-time
+    quota: One server announcement
+    limits: Reviewed within up to 24 hours before going live; ranks below all VIP listings.
+    url: https://l2calendar.com/addnews
+  - name: VIP Bronze
+    price: null
+    billing_period: one-time-duration
+    limits: Immediate posting, premium positioning above free listings (lowest VIP tier).
+    url: https://l2calendar.com/addnews_vip
+    note: Price and duration render in a JS form; not in static HTML.
+  - name: VIP Silver
+    price: null
+    billing_period: one-time-duration
+    limits: Immediate posting, higher placement than Bronze.
+    url: https://l2calendar.com/addnews_vip
+    note: Price and duration render in a JS form; not in static HTML.
+  - name: VIP Gold
+    price: null
+    billing_period: one-time-duration
+    limits: Immediate posting, higher placement than Silver.
+    url: https://l2calendar.com/addnews_vip
+    note: Price and duration render in a JS form; not in static HTML.
+  - name: VIP Gold+
+    price: null
+    billing_period: one-time-duration
+    limits: Immediate posting, top placement (highest VIP tier).
+    url: https://l2calendar.com/addnews_vip
+    note: Price and duration render in a JS form; not in static HTML.
+extend:
+  url: https://l2calendar.com/extend-vip
+  note: Existing VIP listings can be renewed or upgraded via the server's unique ID.

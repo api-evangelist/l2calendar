@@ -1,0 +1,196 @@
+# L2Calendar
+
+> L2Calendar is a multilingual Lineage 2 private server listing platform. It tracks upcoming and past server openings across every game chronicle, with filters by chronicle, rates, labels, and opening date. Server owners can publish announcements with optional VIP placement, and players use the calendar to discover servers before they go live.
+
+Site: https://l2calendar.com
+Languages: English (root `/`), Spanish (`/es/`), Portuguese (`/pt/`), Russian (`/ru/`)
+Tech: Next.js 16 (App Router), React 19, TypeScript, MySQL
+Audience: Lineage 2 players looking for private servers; Lineage 2 server administrators publishing openings.
+
+## Core pages
+
+- [Homepage](https://l2calendar.com/): Upcoming Lineage 2 server openings ordered by date, with VIP and standard listings.
+- [All servers](https://l2calendar.com/all-servers): Complete server catalog with filters and pagination.
+- [Top servers](https://l2calendar.com/all-servers/topservers): Servers with the highest VIP placement.
+- [Opening today](https://l2calendar.com/all-servers/today): Servers launching today (UTC-aware).
+- [Opening tomorrow](https://l2calendar.com/all-servers/tomorrow): Servers launching tomorrow.
+- [Opened yesterday](https://l2calendar.com/all-servers/yesterday): Servers that opened in the last 24 hours.
+- [Servers with add-ons](https://l2calendar.com/all-servers/servers-with-add-ons): Servers tagged with custom add-ons.
+- [Interlude Plus](https://l2calendar.com/all-servers/interlude-plus): Interlude-based servers with custom features.
+
+## Chronicle pages
+
+- [Interlude servers](https://l2calendar.com/interlude-servers)
+- [High Five servers](https://l2calendar.com/high-five-servers)
+- [Gracia Final servers](https://l2calendar.com/gracia-final-servers)
+- [Freya servers](https://l2calendar.com/freya-servers)
+- [GoD servers](https://l2calendar.com/god-servers)
+- [Classic servers](https://l2calendar.com/classic-servers)
+- [C1-C4 servers](https://l2calendar.com/c1-c4-servers)
+- [Odyssey servers](https://l2calendar.com/odyssey-servers)
+- [Helios servers](https://l2calendar.com/helios-servers)
+- [Essence servers](https://l2calendar.com/essence-servers)
+- [Grand Crusade servers](https://l2calendar.com/grand-crusade-servers)
+- [Epilogue servers](https://l2calendar.com/epilogue-servers)
+- [Final servers](https://l2calendar.com/final-servers)
+- [Lindvior servers](https://l2calendar.com/lindvior-servers)
+- [Ertheia servers](https://l2calendar.com/ertheia-servers)
+
+## Server owners
+
+- [Submit a server](https://l2calendar.com/addnews): Free server submission form for administrators.
+- [Submit a VIP server](https://l2calendar.com/addnews_vip): Paid placement with higher visibility (Bronze, Silver, Gold, Gold+ tiers).
+- [Extend or upgrade VIP](https://l2calendar.com/extend-vip): Renew or upgrade an existing VIP listing via the server's unique ID.
+
+## Blog & guides
+
+Lineage 2 guides for players and server owners, available in EN/ES/PT/RU. Player guides link to the matching `/{chronicle}-servers` list; owner guides link to `/addnews` and `/addnews_vip`. The full per-language list is in `/sitemap.xml`.
+
+- [L2JMobius Setup Guide: Build and Run Your Server](https://l2calendar.com/blog/l2jmobius-setup-guide)
+- [aCis vs L2JMobius: Which L2 Pack Should You Run?](https://l2calendar.com/blog/acis-vs-l2jmobius)
+- [Best Lineage 2 Server Files in 2026: Packs Compared](https://l2calendar.com/blog/best-l2-server-files-packs)
+- [L2J vs L2OFF Server Files: Which Should You Run in 2026?](https://l2calendar.com/blog/l2j-vs-l2off-server-files)
+- [L2 Server Marketing Mistakes That Kill Servers Fast](https://l2calendar.com/blog/l2-server-marketing-mistakes)
+- [L2 Server Comeback Campaign: Win Back Players Who Left](https://l2calendar.com/blog/l2-server-comeback-campaign)
+- [L2 Server Grand Opening: Checklist for a Smooth Launch Day](https://l2calendar.com/blog/l2-server-grand-opening)
+- [L2 Server Marketing Metrics That Actually Grow Population](https://l2calendar.com/blog/l2-server-marketing-metrics)
+- [Relaunch Lineage 2 Server: Comeback Plan That Keeps Players](https://l2calendar.com/blog/l2-server-relaunch-comeback)
+- [High Five Beginner Guide: Start Strong on Any Server](https://l2calendar.com/blog/high-five-new-player-guide)
+- [Best High Five Servers 2026: How to Choose the Right One](https://l2calendar.com/blog/best-high-five-servers-2026)
+- [High Five PvP Guide: Olympiad, Sieges and Clan Wars](https://l2calendar.com/blog/high-five-pvp-guide)
+- [l2 server fansite coverage: A Practical Pitch Guide](https://l2calendar.com/blog/l2-server-press-fansites)
+- [Lineage 2 Server Advertising: Paid Ads That Fill Your Server](https://l2calendar.com/blog/l2-server-paid-ads)
+- [Reaching Lineage 2 International Players: RU, PT & ES Guide](https://l2calendar.com/blog/target-ru-pt-es-l2-markets)
+- [Working With L2 Server Streamers to Grow Your Community](https://l2calendar.com/blog/l2-server-streamers-influencers)
+- [A 30-Day L2 Server Marketing Plan That Actually Works](https://l2calendar.com/blog/l2-server-launch-marketing-plan)
+- [How to Build an L2 Server Referral System That Grows Players](https://l2calendar.com/blog/l2-server-referral-system)
+- [High Five Adena Farming: Where the Money Actually Is](https://l2calendar.com/blog/high-five-adena-farming)
+- [High Five Leveling Guide: 1 to 85 Without Wasted Days](https://l2calendar.com/blog/high-five-leveling-guide)
+- [Best Classes in High Five: Farmer, Party and PvP Picks](https://l2calendar.com/blog/high-five-best-classes)
+- [Lineage 2 Server Launch Checklist: What to Do Before Day One](https://l2calendar.com/blog/l2-server-launch-day-checklist)
+- [L2 Server Soft Launch: Opening Quietly Before the Big Day](https://l2calendar.com/blog/l2-server-soft-launch)
+- [Lineage 2 OBT Strategy: Running an Open Beta That Works](https://l2calendar.com/blog/l2-server-obt-strategy)
+- [Best Interlude Servers 2026: Rates, Activity and Longevity](https://l2calendar.com/blog/best-interlude-servers-2026)
+- [Interlude Beginner Guide: Your First Steps to Level 80](https://l2calendar.com/blog/interlude-new-player-guide)
+- [Interlude PvP Guide: Classes, Duel Gear, Sieges and Olympiad](https://l2calendar.com/blog/interlude-pvp-guide)
+- [L2 Server Pre Launch: How to Build Hype Before Opening Day](https://l2calendar.com/blog/l2-server-prelaunch-hype)
+- [L2 Server Social Media: Where to Post and What Actually Works](https://l2calendar.com/blog/l2-server-social-media)
+- [Lineage 2 Server SEO: How to Get Players to Find Your Site](https://l2calendar.com/blog/seo-for-l2-server-website)
+- [Interlude Leveling Guide 1-80: Zones, Rates and Walls](https://l2calendar.com/blog/interlude-leveling-guide)
+- [Interlude Adena Farming Guide: Zones, Spoil, Net Income](https://l2calendar.com/blog/interlude-adena-farming)
+- [Best Classes in Interlude: A Tier Guide by Playstyle](https://l2calendar.com/blog/interlude-best-classes)
+- [L2 Server Banner Design That Actually Gets Clicks](https://l2calendar.com/blog/l2-server-banner-design)
+- [New Lineage 2 Servers This Month: How to Find Them](https://l2calendar.com/blog/new-l2-servers-this-month)
+- [Lineage 2 Server YouTube Marketing That Actually Works](https://l2calendar.com/blog/l2-server-youtube-marketing)
+- [Making a Lineage 2 Server Trailer That Gets Clicks](https://l2calendar.com/blog/l2-server-trailer-promo)
+- [L2 Server Discord Promotion: Bump Rules and Retention](https://l2calendar.com/blog/promote-l2-server-on-discord)
+- [Best Lineage 2 Low Rate Servers in 2026: A Player's Guide](https://l2calendar.com/blog/best-l2-low-rate-servers-2026)
+- [Best Lineage 2 Craft Servers in 2026: What to Check](https://l2calendar.com/blog/best-l2-craft-servers-2026)
+- [Best Lineage 2 PvP Servers in 2026: What Actually Matters](https://l2calendar.com/blog/best-l2-pvp-servers-2026)
+- [L2 Server VIP Advertising: Is Premium Listing Worth It?](https://l2calendar.com/blog/l2-server-premium-vip-listing)
+- [How to Promote L2 Server Reddit Posts Without Getting Banned](https://l2calendar.com/blog/promote-l2-server-on-reddit)
+- [How to Rank on a Lineage 2 Server Top List and Stay There](https://l2calendar.com/blog/how-to-rank-on-l2-top-lists)
+- [How to Join a Lineage 2 Clan and Find a Party Fast](https://l2calendar.com/blog/how-to-join-l2-clan)
+- [How to Spot a Dead Lineage 2 Server: 6 Warning Signs](https://l2calendar.com/blog/how-to-spot-a-dead-l2-server)
+- [Lineage 2 Soulshots for Beginners: Complete Setup Guide](https://l2calendar.com/blog/lineage-2-soulshots-for-beginners)
+- [How to Level Fast in Lineage 2: A Practical Guide](https://l2calendar.com/blog/how-to-level-fast-lineage-2)
+- [Lineage 2 Beginner Mistakes to Avoid: A Player Guide](https://l2calendar.com/blog/lineage-2-beginner-mistakes)
+- [Lineage 2 Newbie Quests: Free Gear and Adena Guide](https://l2calendar.com/blog/lineage-2-newbie-quests)
+- [Lineage 2 Controls Guide: UI Basics for New Players](https://l2calendar.com/blog/lineage-2-controls-ui-basics)
+- [How to Find Lineage 2 Private Servers (2026)](https://l2calendar.com/blog/how-to-find-l2-private-servers)
+- [Lineage 2 System Requirements & FPS Tips](https://l2calendar.com/blog/lineage-2-system-requirements)
+- [Lineage 2 Returning Player Guide: Coming Back in 2026](https://l2calendar.com/blog/l2-returning-player-guide)
+- [How to Make Adena in Lineage 2 (Beginner Guide)](https://l2calendar.com/blog/how-to-make-adena-beginners)
+- [Lineage 2 Low Rate vs High Rate Servers: How to Pick](https://l2calendar.com/blog/l2-low-rate-vs-high-rate)
+- [Lineage 2 Server Rates Explained: A Player's Guide](https://l2calendar.com/blog/what-are-l2-server-rates)
+- [Why Lineage 2 Servers Die (and How to Avoid It)](https://l2calendar.com/blog/why-l2-servers-die)
+- [Upcoming Lineage 2 Servers: How to Find and Pick One](https://l2calendar.com/blog/upcoming-lineage-2-server-openings)
+- [New Lineage 2 Servers Opening This Week](https://l2calendar.com/blog/new-lineage-2-servers-this-week)
+- [Best Lineage 2 Servers 2026: How to Pick Right](https://l2calendar.com/blog/best-lineage-2-servers-2026)
+- [Best Lineage 2 Chronicle for Beginners (2026)](https://l2calendar.com/blog/best-l2-chronicle-for-beginners)
+- [Best Lineage 2 Class for Beginners (2026 Guide)](https://l2calendar.com/blog/best-l2-class-for-beginners)
+- [Lineage 2 Official vs Private Servers: What to Know](https://l2calendar.com/blog/official-vs-private-l2-servers)
+- [How to Connect Lineage 2 Private Server: Setup Guide](https://l2calendar.com/blog/how-to-install-connect-l2-server)
+- [How to Choose a Lineage 2 Private Server (2026)](https://l2calendar.com/blog/how-to-choose-l2-private-server)
+- [Is Lineage 2 Free? What You Actually Pay For](https://l2calendar.com/blog/is-lineage-2-free-to-play)
+- [How to Play Lineage 2 in 2026: A Starter Guide](https://l2calendar.com/blog/how-to-play-lineage-2)
+- [Is Lineage 2 Still Alive in 2026?](https://l2calendar.com/blog/is-lineage-2-still-alive)
+- [Lineage 2 Grand Crusade Guide: Systems & Endgame](https://l2calendar.com/blog/lineage-2-grand-crusade-guide)
+- [Lineage 2 Odyssey Guide: Exalted, Raids & Rates](https://l2calendar.com/blog/lineage-2-odyssey-guide)
+- [Lineage 2 Ertheia Guide: Race, Skills & Alchemy](https://l2calendar.com/blog/lineage-2-ertheia-guide)
+- [Lineage 2 Epilogue Guide: What You Need to Know](https://l2calendar.com/blog/lineage-2-epilogue-guide)
+- [Lineage 2 Final Chronicle: Complete Player Guide](https://l2calendar.com/blog/lineage-2-final-guide)
+- [Lineage 2 Helios Guide: Superion, Gear & Raids](https://l2calendar.com/blog/lineage-2-helios-guide)
+- [Lineage 2 Lindvior Guide: Chronicle & Boss](https://l2calendar.com/blog/lineage-2-lindvior-guide)
+- [Lineage 2 C1-C4 Chronicle Guide for Players](https://l2calendar.com/blog/lineage-2-c1-c4-guide)
+- [How to Attract Players to Your Lineage 2 Server](https://l2calendar.com/blog/how-to-attract-players-to-l2-server)
+- [Where to Advertise Your Lineage 2 Server](https://l2calendar.com/blog/where-to-advertise-l2-server)
+- [Lineage 2 Goddess of Destruction Guide (2024)](https://l2calendar.com/blog/lineage-2-god-guide)
+- [Lineage 2 High Five Guide: What Makes It Different](https://l2calendar.com/blog/lineage-2-high-five-guide)
+- [Lineage 2 Freya Guide: Mechanics, Zones & Tips](https://l2calendar.com/blog/lineage-2-freya-guide)
+- [Lineage 2 Essence Guide: Classes, Systems & Servers](https://l2calendar.com/blog/lineage-2-essence-guide)
+- [Lineage 2 Classic Guide: Classes, Rates, and Economy](https://l2calendar.com/blog/lineage-2-classic-guide)
+- [Lineage 2 Gracia Final Guide: What Changes](https://l2calendar.com/blog/lineage-2-gracia-final-guide)
+- [How to Make a Lineage 2 Server: Complete Guide](https://l2calendar.com/blog/how-to-start-a-lineage-2-server)
+- [Lineage 2 Interlude Guide: Classes, Noblesse & Gear](https://l2calendar.com/blog/lineage-2-interlude-guide)
+- [Welcome to the L2Calendar Blog](https://l2calendar.com/blog/welcome-to-l2calendar-blog)
+- [Blog index](https://l2calendar.com/blog): All guides, paginated 9 per page (also `/es/blog`, `/pt/blog`, `/ru/blog`).
+
+## Video logs (vlog)
+
+Gameplay videos of current Lineage 2 private servers embedded from YouTube (sieges, mass PvP, zerg fights), available in EN/ES/PT/RU. Each entry links to the matching server list so players can join what they just watched.
+
+- [Lineage 2 Interlude Siege: Kosglad 2008 Gludio and Dion](https://l2calendar.com/vlog/kosglad-2008-interlude-gludio-dion-siege-2026)
+- [Lineage 2 High Five Siege on Scryde x2: EpicWin's Push](https://l2calendar.com/vlog/scryde-x2-high-five-castle-siege-sep2026)
+- [Lineage 2 High Five Baium Kill on L2 Viserion Server](https://l2calendar.com/vlog/l2-viserion-high-five-baium-kill-2026-09)
+- [Lineage 2 Orfen PvP: A Three-Way Fight on Reborn](https://l2calendar.com/vlog/l2-reborn-origins-orfen-3way-pvp-sep2026)
+- [Lineage 2 Territory War: Inside Exilium World's 15th](https://l2calendar.com/vlog/exilium-world-territory-war-15-years-sep2026)
+- [Lineage 2 High Five Baium PvP: Dark Avenger vs the Zerg](https://l2calendar.com/vlog/l2-amerika-baium-epic-boss-pvp-sep2026)
+- [Lineage 2 Exilium Siege — Tiger Castle 08 Sep Mass PvP](https://l2calendar.com/vlog/exilium-world-tiger-siege-sep2026)
+- [Lineage 2 High Five Siege on L2 Amerika Core 08 Sep PVP](https://l2calendar.com/vlog/l2-amerika-core-siege-sep2026)
+- [Lineage 2 Interlude Baium PvP on L2 Reborn X1 Doombringer](https://l2calendar.com/vlog/l2-reborn-x1-doombringer-baium-sep2026)
+- [Lineage 2 Interlude Queen Ant on L2 Reborn — Ghost Run](https://l2calendar.com/vlog/l2-reborn-queen-ant-ghost-sentinel-aug2026)
+- [Lineage 2 High Five PvP on Exilium World — Khavatary Run](https://l2calendar.com/vlog/exilium-world-khavatary-pvp-sep2026)
+- [Lineage 2 High Five Valakas PvP on L2 Amerika — SteelRaid](https://l2calendar.com/vlog/l2-amerika-valakas-pvp-sep2026)
+- [Lineage 2 Interlude Baium: Full PvP With ATS on Reborn](https://l2calendar.com/vlog/l2-reborn-baium-full-pvp-ats-jul2026)
+- [Lineage 2 High Five PvP: Duelist Party Fights in Rune](https://l2calendar.com/vlog/l2-amerika-rune-duelist-party-pvp-aug2026)
+- [Lineage 2 Essence Field Boss Battle on Arcane World](https://l2calendar.com/vlog/arcane-world-essence-field-boss-aug2026)
+- [Lineage 2 Interlude Siege: Goddard Falls in Sudamérica](https://l2calendar.com/vlog/l2-sudamerica-goddard-siege-jul2026)
+- [Lineage 2 Baium PvP: L2 Amerika's August Zerg Fight](https://l2calendar.com/vlog/l2-amerika-baium-epic-pvp-aug2026)
+- [Lineage 2 High Five Siege: Reborn Origins Post-Merge](https://l2calendar.com/vlog/l2-reborn-origins-merge-siege-sep2026)
+- [Lineage 2 Essence Siege: Cross-Server Siege on Arcane World](https://l2calendar.com/vlog/arcane-world-essence-cross-siege-aug2026)
+- [Lineage 2 C1 Siege: Oren Castle on Harbor C1 x1 Eternal](https://l2calendar.com/vlog/l2-harbor-c1-oren-siege-aug2026)
+- [Lineage 2 Interlude Siege: Aden Castle on L2 Reborn 10x Live](https://l2calendar.com/vlog/l2-reborn-aden-cardinal-siege-aug2026)
+- [Lineage 2 Essence PvP: Arcane World Siege and Fafurion Raid](https://l2calendar.com/vlog/arcane-world-essence-opening-week-pvp-aug2026)
+- [Lineage 2 Interlude PvP: L2 Reborn Queen Ant Raid 17/08](https://l2calendar.com/vlog/l2-reborn-10x-queen-ant-raid-aug2026)
+- [Lineage 2 Fafurion PvP Event: Exilium World 29/08/26](https://l2calendar.com/vlog/exilium-world-pvp-event-crimsonlegacy-aug2026)
+- [Lineage 2 High Five Baium – L2 Amerika Duelist PvP 6 Aug](https://l2calendar.com/vlog/l2-amerika-baium-pvp-high-five-aug2026)
+- [Lineage 2 Interlude Mass PvP – LU4 Gamma Gludio Siege](https://l2calendar.com/vlog/lu4-gamma-gludio-siege-aug2026)
+- [Lineage 2 Interlude Siege – L2 Reborn 10x Old on 23 August](https://l2calendar.com/vlog/l2-reborn-10x-old-siege-aug2026)
+- [Lineage 2 Interlude PvP Highlights L2Gold.in Clan Wars](https://l2calendar.com/vlog/l2gold-interlude-pvp-highlights)
+- [Lineage 2 Interlude Siege Aden L2 Scorpions Live PvP](https://l2calendar.com/vlog/l2-scorpions-interlude-aden-siege)
+- [Lineage 2 High Five Server L2 Amerika Fafurion PvP](https://l2calendar.com/vlog/l2-amerika-fafurion-epic-pvp-h5)
+- [Lineage 2 Interlude Siege — L2Jade 2 Years Online Oren](https://l2calendar.com/vlog/l2jade-oren-siege-aug2026)
+- [Lineage 2 Interlude Siege — Brabos Club Aden Castle](https://l2calendar.com/vlog/brabos-club-aden-siege-aug2026)
+- [Lineage 2 Interlude Siege — Antharas and Rune Mass PvP on L2](https://l2calendar.com/vlog/l2-reborn-antharas-rune-siege-aug2026)
+- [Brabos Club Lineage 2 Interlude Siege at Goddard x10](https://l2calendar.com/vlog/brabos-club-goddard-siege-aug2026)
+- [Lineage 2 Interlude Siege — L2 Eirin x300 Dion](https://l2calendar.com/vlog/eirin-x300-dion-siege-aug2026)
+- [Lineage 2 Interlude Siege at Giran on KosGlaD 2008](https://l2calendar.com/vlog/kosglad-2008-giran-castle-siege)
+- [Lineage 2 Reborn Siege Footage From Signature x1 Teon](https://l2calendar.com/vlog/l2-reborn-signature-teon-castle-siege)
+- [Lineage 2 Castle Siege Action on Arcane World Sakura](https://l2calendar.com/vlog/arcane-world-sakura-castle-siege)
+- [LU4 Lineage 2 PvP: Perfect Clan War at Tower of Insolence](https://l2calendar.com/vlog/lu4-clan-war-tower-of-insolence)
+- [Lineage 2 Interlude Mass PVP Inside KetraWars Day 3](https://l2calendar.com/vlog/ketrawars-interlude-mass-pvp-day-3)
+- [Lineage 2 Interlude Siege — L2 Reborn Oren Castle August 2026](https://l2calendar.com/vlog/l2-reborn-oren-castle-siege)
+- [Vlog index](https://l2calendar.com/vlog): All videos, paginated 9 per page (also `/es/vlog`, `/pt/vlog`, `/ru/vlog`).
+
+## Reference
+
+- [Sitemap (XML)](https://l2calendar.com/sitemap.xml): Full URL inventory across all languages.
+- [robots.txt](https://l2calendar.com/robots.txt): Crawl rules. `/api/`, `/goto/`, and `/away/` are disallowed.
+- [Full content for AIs](https://l2calendar.com/llms-full.txt): Expanded reference with filters, taxonomy, and policies.
+
+## Optional
+
+- [Spanish homepage](https://l2calendar.com/es/)
+- [Portuguese homepage](https://l2calendar.com/pt/)
+- [Russian homepage](https://l2calendar.com/ru/)
