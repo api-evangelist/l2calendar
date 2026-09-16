@@ -11,6 +11,14 @@ specificationVersion: '0.21'
 image: https://l2calendar.com/images/logo.png
 tags:
   - lineage2
+  - MMORPG
+  - Game Servers
+  - Gaming
+  - server-listing
+  - llms-txt
+  - agent-native-content
+tags_raw:
+  - lineage2
   - mmorpg
   - game-servers
   - gaming
@@ -26,6 +34,14 @@ apis:
     baseURL: https://l2calendar.com
     image: https://l2calendar.com/images/logo.png
     tags:
+      - lineage2
+      - MMORPG
+      - Game Servers
+      - Gaming
+      - server-listing
+      - llms-txt
+      - agent-native-content
+    tags_raw:
       - lineage2
       - mmorpg
       - game-servers
