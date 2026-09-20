@@ -1,0 +1,14 @@
+{
+  "repo": "l2calendar",
+  "feeds": [
+    {
+      "source": "https://l2calendar.com/addnews_vip",
+      "feed_url": "https://l2calendar.com/rss.xml",
+      "title": "",
+      "saved": 5,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 5,
+  "fetched": "2026-09-19T20:17:39Z"
+}
