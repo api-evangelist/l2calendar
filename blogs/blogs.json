@@ -5,10 +5,17 @@
       "source": "https://l2calendar.com/addnews_vip",
       "feed_url": "https://l2calendar.com/rss.xml",
       "title": "",
-      "saved": 5,
+      "saved": 0,
       "method": "discovered"
+    },
+    {
+      "source": "https://l2calendar.com/rss.xml",
+      "feed_url": "https://l2calendar.com/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
-  "post_count": 5,
-  "fetched": "2026-09-19T20:17:39Z"
+  "post_count": 50,
+  "fetched": "2026-10-03T12:30:02Z"
 }
