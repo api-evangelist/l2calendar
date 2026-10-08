@@ -45,3 +45,40 @@ plans:
 extend:
   url: https://l2calendar.com/extend-vip
   note: Existing VIP listings can be renewed or upgraded via the server's unique ID.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Free listing
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: VIP Bronze
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: VIP Silver
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: VIP Gold
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: VIP Gold+
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
