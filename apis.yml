@@ -1,0 +1,115 @@
+name: L2Calendar
+description: >-
+  Multilingual Lineage 2 private server listing platform tracking upcoming and past server openings across every game
+  chronicle, with filters by chronicle, rates, labels, and opening date. Server owners publish announcements with
+  optional VIP placement.
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/l2calendar/refs/heads/main/apis.yml
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: low
+  probe_state: none
+  source:
+  - plans
+  - security
+  generated: '2026-11-06'
+  method: derived
+created: '2026-09-12'
+modified: '2026-09-13'
+specificationVersion: '0.21'
+image: https://l2calendar.com/images/logo.png
+tags:
+  - lineage2
+  - MMORPG
+  - Game Servers
+  - Gaming
+  - server-listing
+  - Llms.txt
+  - agent-native-content
+tags_raw:
+  - lineage2
+  - mmorpg
+  - game-servers
+  - gaming
+  - server-listing
+  - llms-txt
+  - agent-native-content
+apis:
+  - name: L2Calendar Agent-Native Content
+    description: >-
+      Agent-native content surface exposing machine-readable summaries via llms.txt and llms-full.txt for AI assistants
+      and crawlers to help players find Lineage 2 servers.
+    humanURL: https://l2calendar.com
+    image: https://l2calendar.com/images/logo.png
+    tags:
+      - lineage2
+      - MMORPG
+      - Game Servers
+      - Gaming
+      - server-listing
+      - Llms.txt
+      - agent-native-content
+    tags_raw:
+      - lineage2
+      - mmorpg
+      - game-servers
+      - gaming
+      - server-listing
+      - llms-txt
+      - agent-native-content
+    properties:
+      - type: LLMsTxt
+        url: https://l2calendar.com/llms.txt
+      - type: LLMsTxt
+        url: https://l2calendar.com/llms-full.txt
+maintainers:
+  - FN: L2Calendar
+    url: https://l2calendar.com
+x-generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 90
+  at: '2026-09-12T11:28:44.508Z'
+common:
+- type: Website
+  url: https://l2calendar.com
+- type: DomainSecurity
+  url: security/l2calendar-domain-security.yml
+- type: Plans
+  url: plans/l2calendar-plans-pricing.yml
+- type: Pricing
+  url: https://l2calendar.com/addnews_vip
+- type: Blog
+  url: https://l2calendar.com/blog
+- type: SignUp
+  url: https://l2calendar.com/addnews
+
+x-enrichment:
+  date: '2026-09-13'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    L2Calendar is a Next.js content platform that publishes llms.txt and
+    llms-full.txt for agents but exposes no public API; every OpenAPI/GraphQL/MCP
+    and /.well-known probe 404s and the only /api/ path is an internal Next.js
+    route that 301-redirects and is Disallowed in robots.txt.
+  evidence:
+    - url: https://l2calendar.com/openapi.json
+      status: 404
+    - url: https://l2calendar.com/graphql
+      status: 404
+    - url: https://l2calendar.com/api/
+      status: 301
+    - url: https://l2calendar.com/llms.txt
+      status: 200
+  checked: '2026-09-13'
