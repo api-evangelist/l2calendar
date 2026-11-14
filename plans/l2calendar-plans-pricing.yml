@@ -46,7 +46,7 @@ extend:
   url: https://l2calendar.com/extend-vip
   note: Existing VIP listings can be renewed or upgraded via the server's unique ID.
 x-canonical:
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   vocabulary: engine/economics/plans-canonical.yml
   models:
   - free
