@@ -1,3 +1,4 @@
+aid: l2calendar
 name: L2Calendar
 description: >-
   Multilingual Lineage 2 private server listing platform tracking upcoming and past server openings across every game
@@ -17,14 +18,14 @@ accessModel:
   source:
   - plans
   - security
-  generated: '2026-11-13'
+  generated: '2026-11-20'
   method: derived
 created: '2026-09-12'
 modified: '2026-09-13'
 specificationVersion: '0.21'
 image: https://l2calendar.com/images/logo.png
 tags:
-  - lineage2
+  - Lineage2
   - MMORPG
   - Game Servers
   - Gaming
@@ -40,14 +41,15 @@ tags_raw:
   - llms-txt
   - agent-native-content
 apis:
-  - name: L2Calendar Agent-Native Content
+  - aid: l2calendar:l2calendar-agent-native-content
+    name: L2Calendar Agent-Native Content
     description: >-
       Agent-native content surface exposing machine-readable summaries via llms.txt and llms-full.txt for AI assistants
       and crawlers to help players find Lineage 2 servers.
     humanURL: https://l2calendar.com
     image: https://l2calendar.com/images/logo.png
     tags:
-      - lineage2
+      - Lineage2
       - MMORPG
       - Game Servers
       - Gaming
